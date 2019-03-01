@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"activities":{},"ends":["f2688ba3db3b6f009106f4331f961941"],"stages":{},"subflows":[]}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type/>
+        <description>Update the state of this Record in the ServiceNow Records Data Table in IBM Resilient</description>
+        <expected_sequences>b6688ba3db3b6f009106f4331f961940,b2688ba3db3b6f009106f4331f96193c,fe688ba3db3b6f009106f4331f961941,f2688ba3db3b6f009106f4331f961941</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>b6688ba3db3b6f009106f4331f961940,b2688ba3db3b6f009106f4331f96193c,fe688ba3db3b6f009106f4331f961941,f2688ba3db3b6f009106f4331f961941</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>RES_WF_UpdateState</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">b6688ba3db3b6f009106f4331f961940</start>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>3a68cbefdbf76f009106f4331f961995</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:10:17</sys_updated_on>
+        <table>incident</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="RES_WF_UpdateState">be68cbefdbf76f009106f4331f961994</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Update the state of this Record in the ServiceNow Records Data Table in IBM Resilient</description>
+        <name>RES_WF_UpdateState</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>be68cbefdbf76f009106f4331f961994</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>RES_WF_UpdateState</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IBM Resilient" source="x_ibmrt_resilient">13db855fdbfb2f009106f4331f961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Resilient">13db855fdbfb2f009106f4331f961929</sys_scope>
+        <sys_update_name>wf_workflow_be68cbefdbf76f009106f4331f961994</sys_update_name>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:08:17</sys_updated_on>
+        <table>incident</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Timer">3961a1da0a0a0b5c00ecd84822f70d85</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name/>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>b2688ba3db3b6f009106f4331f96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="RES_WF_UpdateState">3a68cbefdbf76f009106f4331f961995</workflow_version>
+        <x>464</x>
+        <y>183</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b2688ba3db3b6f009106f4331f96193c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>32688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>36688ba3db3b6f009106f4331f96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>3a688ba3db3b6f009106f4331f96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>3a688ba3db3b6f009106f4331f96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>3e688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value>1970-01-01 00:00:01</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>72688ba3db3b6f009106f4331f96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>76688ba3db3b6f009106f4331f96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>7a688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>b2688ba3db3b6f009106f4331f96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>b6688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>be688ba3db3b6f009106f4331f96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>f2688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>f6688ba3db3b6f009106f4331f96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>fa688ba3db3b6f009106f4331f96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>fe688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>36688ba3db3b6f009106f4331f96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">21f80cd00a0a0b2101fcd5b5defc0810</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>3a688ba3db3b6f009106f4331f96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4cba34da0a0a0b5200798c86eafe1203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>b6688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4cbfe48a0a0a0b5200cf8b82cc6685f1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>32688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">220dc5a40a0a0b2109fbd28b8c4b6213</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>3e688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value>1970-01-01 00:00:01</value>
+        <variable display_value="">c35dc0df0a0a0ba96248a7098d737925</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>b2688ba3db3b6f009106f4331f96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">21fd462c0a0a0b211c997276d7806c03</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>fe688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">220cd53d0a0a0b214103bdc2ec5c7ab4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>be688ba3db3b6f009106f4331f96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc6788c0a0a0b5200e6743c94001b16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1320</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>fa688ba3db3b6f009106f4331f96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">4cc4a4030a0a0b52007334f001376dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>f2688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc836da0a0a0b520083ebc07da2f47c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>f6688ba3db3b6f009106f4331f96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">4cc740fe0a0a0b520025dcf8e2ff78e7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>3a688ba3db3b6f009106f4331f96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">292b2f0e0a0a0b215aa2dd2cbc578dc5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>72688ba3db3b6f009106f4331f96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">292c91070a0a0b212543d91ffde5014c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>76688ba3db3b6f009106f4331f96193e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value/>
+        <variable display_value="">292bd15e0a0a0b215a040c701033e3c5</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b2688ba3db3b6f009106f4331f96193c</document_key>
+        <order>3000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>7a688ba3db3b6f009106f4331f96193d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">293493710a0a0b2115e3e5b4fce1d12a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="">b2688ba3db3b6f009106f4331f96193c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>7e688ba3db3b6f009106f4331f96193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name/>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>fe688ba3db3b6f009106f4331f961941</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:08:07</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="RES_WF_UpdateState">3a68cbefdbf76f009106f4331f961995</workflow_version>
+        <x>467</x>
+        <y>301</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=fe688ba3db3b6f009106f4331f961941"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fe688ba3db3b6f009106f4331f961941</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>f2688ba3db3b6f009106f4331f961942</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:08:07</sys_updated_on>
+        <value>(function RES_WF_UpdateState(){&#13;
+	&#13;
+	var resHelper, stateToColorMap, res_reference_id, snTicketState, snTicketStateColor, resolutionNotes = null;&#13;
+&#13;
+	try{&#13;
+		//Instantiate new resHelper&#13;
+		resHelper = new ResilientHelper();&#13;
+		&#13;
+		//Map ServiceNow state to a color&#13;
+		//Colors accepted by resHelper.updateStateInResilient() = green/orange/yellow/red&#13;
+		stateToColorMap = {&#13;
+			"New": "green",&#13;
+			"In Progress": "orange",&#13;
+			"On Hold": "yellow",&#13;
+			"Resolved": "red",&#13;
+			"Closed": "red",&#13;
+			"Canceled": "red"&#13;
+		};&#13;
+		&#13;
+		//Get the required values&#13;
+		res_reference_id = current.getValue("x_ibmrt_resilient_ibm_resilient_reference_id");&#13;
+		snTicketState = current.state.getChoiceValue();&#13;
+		snTicketStateColor = stateToColorMap[snTicketState];&#13;
+		&#13;
+		//Update that status in the res datatable&#13;
+		resHelper.updateStateInResilient(res_reference_id, snTicketState, snTicketStateColor);&#13;
+		&#13;
+		//Get resolution notes if there are any&#13;
+		resolutionNotes = current.getValue("close_notes");&#13;
+		&#13;
+		//Add a note to the resilient incident/task if there are resolution notes&#13;
+		if(resolutionNotes){&#13;
+			resHelper.addNote(res_reference_id, resolutionNotes);&#13;
+		}&#13;
+	}&#13;
+	catch(errMsg){&#13;
+		current.work_notes = "Failed to update state in IBM Resilient.\nReason: " + errMsg;&#13;
+		gs.error(errMsg);&#13;
+	}&#13;
+})();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>fe688ba3db3b6f009106f4331f961941</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>f2688ba3db3b6f009106f4331f961942</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:08:07</sys_updated_on>
+        <value>(function RES_WF_UpdateState(){&#13;
+	&#13;
+	var resHelper, stateToColorMap, res_reference_id, snTicketState, snTicketStateColor, resolutionNotes = null;&#13;
+&#13;
+	try{&#13;
+		//Instantiate new resHelper&#13;
+		resHelper = new ResilientHelper();&#13;
+		&#13;
+		//Map ServiceNow state to a color&#13;
+		//Colors accepted by resHelper.updateStateInResilient() = green/orange/yellow/red&#13;
+		stateToColorMap = {&#13;
+			"New": "green",&#13;
+			"In Progress": "orange",&#13;
+			"On Hold": "yellow",&#13;
+			"Resolved": "red",&#13;
+			"Closed": "red",&#13;
+			"Canceled": "red"&#13;
+		};&#13;
+		&#13;
+		//Get the required values&#13;
+		res_reference_id = current.getValue("x_ibmrt_resilient_ibm_resilient_reference_id");&#13;
+		snTicketState = current.state.getChoiceValue();&#13;
+		snTicketStateColor = stateToColorMap[snTicketState];&#13;
+		&#13;
+		//Update that status in the res datatable&#13;
+		resHelper.updateStateInResilient(res_reference_id, snTicketState, snTicketStateColor);&#13;
+		&#13;
+		//Get resolution notes if there are any&#13;
+		resolutionNotes = current.getValue("close_notes");&#13;
+		&#13;
+		//Add a note to the resilient incident/task if there are resolution notes&#13;
+		if(resolutionNotes){&#13;
+			resHelper.addNote(res_reference_id, resolutionNotes);&#13;
+		}&#13;
+	}&#13;
+	catch(errMsg){&#13;
+		current.work_notes = "Failed to update state in IBM Resilient.\nReason: " + errMsg;&#13;
+		gs.error(errMsg);&#13;
+	}&#13;
+})();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="">fe688ba3db3b6f009106f4331f961941</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>7a688ba3db3b6f009106f4331f961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>b6688ba3db3b6f009106f4331f961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="RES_WF_UpdateState">3a68cbefdbf76f009106f4331f961995</workflow_version>
+        <x>498</x>
+        <y>65</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b6688ba3db3b6f009106f4331f961940"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">b6688ba3db3b6f009106f4331f961940</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>7e688ba3db3b6f009106f4331f961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>f2688ba3db3b6f009106f4331f961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="RES_WF_UpdateState">3a68cbefdbf76f009106f4331f961995</workflow_version>
+        <x>488</x>
+        <y>425</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f2688ba3db3b6f009106f4331f961941"/>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7a688ba3db3b6f009106f4331f961942</condition>
+        <from display_value="">fe688ba3db3b6f009106f4331f961941</from>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>b2688ba3db3b6f009106f4331f961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <to display_value="End">f2688ba3db3b6f009106f4331f961941</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7e688ba3db3b6f009106f4331f961940</condition>
+        <from display_value="Begin">b6688ba3db3b6f009106f4331f961940</from>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>fa688ba3db3b6f009106f4331f961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <to display_value="">b2688ba3db3b6f009106f4331f96193c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">7e688ba3db3b6f009106f4331f96193f</condition>
+        <from display_value="">b2688ba3db3b6f009106f4331f96193c</from>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>fe688ba3db3b6f009106f4331f961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <to display_value="">fe688ba3db3b6f009106f4331f961941</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>integration_developer</sys_created_by>
+        <sys_created_on>2019-03-01 16:05:59</sys_created_on>
+        <sys_id>fa68cbefdbf76f009106f4331f961995</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>integration_developer</sys_updated_by>
+        <sys_updated_on>2019-03-01 16:05:59</sys_updated_on>
+        <workflow_version display_value="RES_WF_UpdateState">3a68cbefdbf76f009106f4331f961995</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=be68cbefdbf76f009106f4331f961994^sys_id!=3a68cbefdbf76f009106f4331f961995">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
