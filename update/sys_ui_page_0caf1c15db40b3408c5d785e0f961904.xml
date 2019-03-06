@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>Display a link to the IBM Resilient Community</description>
+        <direct>false</direct>
+        <endpoint>x_ibmrt_resilient_Support.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<style>
+		.res-container {
+			margin: auto;
+			width: 500px;
+			height: 175px;
+			border: 2px solid #82bc00;
+			padding: 10px;
+			-webkit-box-shadow: 10px 10px 5px -1px rgba(237,237,237,1);
+			-moz-box-shadow: 10px 10px 5px -1px rgba(237,237,237,1);
+			box-shadow: 10px 10px 5px -1px rgba(237,237,237,1);
+		}
+		
+		.res-container .res-logo{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+		}
+		
+		.res-container h3 {
+			text-align: center;
+			margin: 20px 0px 20px 0px;
+		}
+		
+		.res-container p{
+			text-align: center;
+			margin: 5px;
+		}
+
+	</style>
+	<div class="res-container">
+		<img class="res-logo" alt="ibm_resilient_logo" src="ibm_resilient_logo.png"/>
+		<h3>IBM Resilient Community</h3>
+		<a target="_blank" href="https://ibm.biz/resilientcommunity">
+			<p>Click here to visit the IBM Resilient Community for Support</p>
+		</a>
+	</div>
+</j:jelly>
+]]></html>
+        <name>Support</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 14:18:21</sys_created_on>
+        <sys_id>0caf1c15db40b3408c5d785e0f961904</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Support</sys_name>
+        <sys_package display_value="IBM Resilient" source="x_ibmrt_resilient">13db855fdbfb2f009106f4331f961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Resilient">13db855fdbfb2f009106f4331f961929</sys_scope>
+        <sys_update_name>sys_ui_page_0caf1c15db40b3408c5d785e0f961904</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 15:09:48</sys_updated_on>
+    </sys_ui_page>
+</record_update>
