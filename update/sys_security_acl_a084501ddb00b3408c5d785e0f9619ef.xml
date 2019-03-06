@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>UI Page to test your connection to IBM Resilient from ServiceNow</description>
+        <name>x_ibmrt_resilient_Test_Connection</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-06 13:31:05</sys_created_on>
+        <sys_id>a084501ddb00b3408c5d785e0f9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_ibmrt_resilient_Test_Connection</sys_name>
+        <sys_package display_value="IBM Resilient" source="x_ibmrt_resilient">13db855fdbfb2f009106f4331f961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Resilient">13db855fdbfb2f009106f4331f961929</sys_scope>
+        <sys_update_name>sys_security_acl_a084501ddb00b3408c5d785e0f9619ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-06 13:31:05</sys_updated_on>
+        <type display_value="ui_page">ui_page</type>
+    </sys_security_acl>
+</record_update>
