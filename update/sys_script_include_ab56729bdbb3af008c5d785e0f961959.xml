@@ -30,7 +30,25 @@ ResilientHelper.prototype = {
 		
 		return {"incidentId": incidentId, "taskId": taskId};
 	},
-	
+
+	getHexColor: function(colorName){
+		var colors = {
+			"green": "#00b33c",
+			"orange": "#ff9900",
+			"yellow": "#e6e600",
+			"red": "#e60000"
+		};
+
+		try{
+			return colors[colorName.toLowerCase()];
+		}
+		catch(errMsg){
+			gs.debug("Failed to get Hex Value for "+colorName+". Defaulting to Green: #00b33c\n"+errMsg);
+			return colors["green"];
+		}
+
+	},
+
 	create: function(record, snRecordId, caseName, options){
 		var caseData = {};
 		var snLink, res, res_reference_id, res_reference_type, res_reference_link, returnValue, errMsg = null;
@@ -156,12 +174,6 @@ ResilientHelper.prototype = {
 	},
 
 	addNewRowToRESDatatable: function(record_name, res_type, res_reference_id, sn_ref_id, res_link, sn_link){
-		var colors = {
-			"green": "#00b33c",
-			"orange": "#ff9900",
-			"yellow": "#e6e600",
-			"red": "#e60000"
-		};
 
 		try{
 				var ids = this.parseRefId(res_reference_id);
@@ -170,8 +182,8 @@ ResilientHelper.prototype = {
 
 				var links = '<a target="_blank" href="'+res_link+'">RES</a> <a href="'+sn_link+'">SN</a>';
 
-				var resTicketStateRichText = '<div style="color:' + colors["green"] +'">Active</div>';
-				var snTicketStateRichText = '<div style="color:' + colors["green"] +'">Sent to Resilient</div>';
+				var resTicketStateRichText = '<div style="color:' + this.getHexColor("green") +'">Active</div>';
+				var snTicketStateRichText = '<div style="color:' + this.getHexColor("green") +'">Sent to Resilient</div>';
 
 				var cells = [
 					["sn_records_dt_time", now],
@@ -194,23 +206,15 @@ ResilientHelper.prototype = {
 				this.res_api.addDatatableRow(ids.incidentId, formattedCells);
 			}
 		catch(e){
-			var errMsg = "Failed to send add row in Resilient Datatable for " + res_reference_id;
+			var errMsg = "Failed to add a new row to Resilient Data Table for " + res_reference_id;
 			gs.error(errMsg);
 			throw e;
 		}
 	},
 	
 	updateStateInResilient: function(res_reference_id, snTicketState, snTicketStateColor){
-		var colors = {
-			"green": "#00b33c",
-			"orange": "#ff9900",
-			"yellow": "#e6e600",
-			"red": "#e60000"
-		};
 
-		if (!snTicketStateColor){
-			snTicketStateColor = "green";
-		}
+		var textColor = this.getHexColor(snTicketStateColor);
 
 		try{
 			var ids = this.parseRefId(res_reference_id);
@@ -235,7 +239,7 @@ ResilientHelper.prototype = {
 				var gdt = new GlideDateTime();
 				var now = gdt.getNumericValue();
 
-				var snTicketStateRichText = '<div style="color:' + colors[snTicketStateColor] +'">' + snTicketState + '</div>';
+				var snTicketStateRichText = '<div style="color:' + textColor +'">' + snTicketState + '</div>';
 
 				var cells = [
 					["sn_records_dt_time", now],
@@ -285,13 +289,13 @@ ResilientHelper.prototype = {
         <sys_created_by>integration_developer</sys_created_by>
         <sys_created_on>2019-02-28 20:09:15</sys_created_on>
         <sys_id>ab56729bdbb3af008c5d785e0f961959</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>ResilientHelper</sys_name>
         <sys_package display_value="IBM Resilient" source="x_ibmrt_resilient">13db855fdbfb2f009106f4331f961929</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="IBM Resilient">13db855fdbfb2f009106f4331f961929</sys_scope>
         <sys_update_name>sys_script_include_ab56729bdbb3af008c5d785e0f961959</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-03-21 11:06:14</sys_updated_on>
+        <sys_updated_on>2019-07-15 15:33:26</sys_updated_on>
     </sys_script_include>
 </record_update>
