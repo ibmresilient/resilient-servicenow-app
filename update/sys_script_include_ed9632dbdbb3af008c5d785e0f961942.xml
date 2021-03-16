@@ -3,6 +3,7 @@
         <access>package_private</access>
         <active>true</active>
         <api_name>x_ibmrt_resilient.CreateTask</api_name>
+        <caller_access/>
         <client_callable>true</client_callable>
         <description>Class that is called from the Create Resilient Task UI Action to create a Task in IBM Resilient</description>
         <name>CreateTask</name>

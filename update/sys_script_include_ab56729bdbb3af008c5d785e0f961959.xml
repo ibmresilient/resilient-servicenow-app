@@ -3,6 +3,7 @@
         <access>package_private</access>
         <active>true</active>
         <api_name>x_ibmrt_resilient.ResilientHelper</api_name>
+        <caller_access/>
         <client_callable>false</client_callable>
         <description>A class to help use the ResilientAPI. This class will ensure that 'required fields' get set, in order for the whole integration to work correctly. The user should define their own 'mapping/field values' in the Workflow - Run-Scripts and pass those values into this helper</description>
         <name>ResilientHelper</name>
