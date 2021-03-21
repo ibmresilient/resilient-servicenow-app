@@ -55,6 +55,7 @@ function executeRESTMessage(rm, midServerName, baseURL, timeout){
 		timeout = 60;
 	}
 
+	
 	rm.setHttpTimeout(timeout * 1000);
 
 	try{
@@ -62,12 +63,13 @@ function executeRESTMessage(rm, midServerName, baseURL, timeout){
 
 		// If using a mid-server, wait max timeout in seconds for response
 		if(midServerName){
+			gs.debug("Waiting for response with timeout value set to: '"+timeout+"s'");
 			response.waitForResponse(timeout);
 		}
 	}
 	catch (e){
 		if (e.message.indexOf("No response for ECC message request") !== -1){
-			errMsg = "Timed out getting response.";
+			errMsg = e + "\nTimed out getting response.";
 			if (midServerName){
 				errMsg += "\nCheck Mid Server. Login to the machine hosting your '" +midServerName+ "' Mid-Server and ensure you can ping IBM Resilient at " + baseURL;
 			}
@@ -205,6 +207,7 @@ ResilientAPI.prototype = {
 			snUsername = gs.getProperty("x_ibmrt_resilient.ServiceNowUsername");
 			midServerName = gs.getProperty("x_ibmrt_resilient.ServiceNowMidServerName");
 			requestTimeout = gs.getProperty("x_ibmrt_resilient.RequestTimeout");
+			gs.debug("x_ibmrt_resilient.RequestTimeout: '"+requestTimeout+"s'");
 		}
 		catch (e){
 			errMsg = "Failed getting Resilient Configuration Properties. Check your Properties for IBM Resilient\n" + e;
@@ -217,6 +220,9 @@ ResilientAPI.prototype = {
 		if (!userEmail) {throw "Resilient Email" + errMsg;}
 		if (!userPassword) {throw "Resilient Password" + errMsg;}
 		if (!snUsername) {throw "ServiceNow Username" + errMsg;}
+
+		//Set requestTimeout
+		this.requestTimeout = requestTimeout;
 
 		//Setup MID Server
 		midServerName = midServerName.trim();
@@ -433,13 +439,13 @@ ResilientAPI.prototype = {
         <sys_created_by>integration_developer</sys_created_by>
         <sys_created_on>2019-02-28 20:08:19</sys_created_on>
         <sys_id>5a16fa9bdbb3af008c5d785e0f961987</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>ResilientAPI</sys_name>
         <sys_package display_value="IBM Resilient" source="x_ibmrt_resilient">13db855fdbfb2f009106f4331f961929</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="IBM Resilient">13db855fdbfb2f009106f4331f961929</sys_scope>
         <sys_update_name>sys_script_include_5a16fa9bdbb3af008c5d785e0f961987</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-03-11 12:13:30</sys_updated_on>
+        <sys_updated_on>2021-03-21 21:54:25</sys_updated_on>
     </sys_script_include>
 </record_update>
