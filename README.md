@@ -1,4 +1,4 @@
-# How to install the update set on ServiceNow for v2.3.9
+# How to install the update set on ServiceNow for v2.3.8
 When upgrading using an update set the previously configured properties in of the app will be deleted. 
 
 1. Log onto your ServiceNow instance through a web browser.
